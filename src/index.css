@@ -5,6 +5,8 @@
 body {
     position: relative;
     scroll-behavior: smooth;
+    --primary-color: #267e03dc;
+    --background-from-primary-color: #267e031c;
 }
 
 button {
