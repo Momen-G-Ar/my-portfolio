@@ -1,17 +1,16 @@
 
-const About = () => {
+const Contact = () => {
     return (
-        <section id='about' className='snap-start'>
+        <section id='contact' className='snap-start'>
             <div
                 className={`
-                    transition-all duration-1000 ease-in min-h-screen min-w-screen
-                    grid grid-cols-1 grid-rows-2
-                    sm:grid-cols-2 sm:grid-rows-1 font-sans
+                    grid grid-cols-1 grid-rows-2 h-screen w-screen
+                    sm:grid-cols-2 sm:grid-rows-1 font-sans 
                 `}
             >
-                <div id='up-left' className='min-w-full] flex flex-col justify-center items-center px-10'>
+                <div id='up-left' className='min-w-full flex flex-col justify-center items-center px-10'>
                     <h1 className='min-w-full flex justify-start items-start font-sans text-sm sm:text-2xl text-[var(--primary-color)] mb-2'>
-                        About Me
+                        Contact me 
                     </h1>
                     <p className='font-semibold text-xs md:text-lg sm:text-base'>
                         Hello, I'm
@@ -25,7 +24,7 @@ const About = () => {
                         As a result, I am now equipped with the necessary skills to work as a <span className='text-[var(--primary-color)]'>Junior MERN Stack developer.</span>
                     </p>
                 </div>
-                <div id='down-right' className='flex justify-center items-center'>
+                <div id='down-right' className=' flex justify-center items-center'>
                     Down
                 </div>
             </div>
@@ -33,4 +32,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Contact;

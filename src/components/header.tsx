@@ -1,6 +1,7 @@
 import useHeader from '../hooks/header.hook';
 
 import { TfiMenu } from 'react-icons/tfi';
+
 const Header = () => {
     const { isOpen, toggleOpenMenu, links, activeLink, setActiveLink } = useHeader();
     return (
@@ -43,6 +44,8 @@ const Header = () => {
                                 key={link + index}
                                 href={`#${link}`}
                                 className={`
+                                transition-all duration-200 ease-in-out
+                                hover:decoration-[var(--primary-color)] hover:underline hover:underline-offset-2 hover:decoration-2 
                                 cursor-pointer capitalize
                                 ${activeLink === link ? 'underline underline-offset-4 decoration-[var(--primary-color)] decoration-4' : ''}
                             `}

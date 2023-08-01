@@ -2,11 +2,11 @@ import personalImage from '../assets/self-image.png';
 
 const Home = () => {
     return (
-        <section id='home'>
+        <section id='home' className='snap-start'>
             <div
                 className={`
-                    bg-[var(--background-from-primary-color)]
-                    grid grid-cols-1 grid-rows-2 min-w-full min-h-[600px]
+                    bg-[var(--background-from-primary-color)] min-h-screen min-w-screen
+                    grid grid-cols-1 grid-rows-2  
                     sm:grid-cols-[0.9fr_1fr] sm:grid-rows-1 font-sans
                 `}
             >
@@ -18,7 +18,7 @@ const Home = () => {
                     </h1>
                 </div>
                 <div id='down-right' className='flex justify-center items-center'>
-                    <div className='w-[50%] flex justify-center items-center'>
+                    <div className='w-[70%] flex justify-center items-center'>
                         <img
                             src={personalImage}
                             className='sm:-translate-y-0 rounded-xl min-h-[230px] max-h-[420px] min-w-[230px] border-2 border-[var(--primary-color)] -translate-y-10'
