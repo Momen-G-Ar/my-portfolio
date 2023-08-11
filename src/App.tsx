@@ -6,6 +6,7 @@ const App = () => {
         <div
             className='flex flex-col top-0 right-0 left-0 bottom-0 h-screen scroll-smooth snap-mandatory snap-y overflow-y-auto scrollbar-hide'
         >
+            
             <Header />
             <Home />
             <About />
