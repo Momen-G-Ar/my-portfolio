@@ -2,7 +2,7 @@ import personalImage from '../../public/self-image.png';
 
 const Home = () => {
     return (
-        <section id='home' className='snap-start'>
+        <section id='home' className='sm:snap-start'>
             <div
                 className={`
                     bg-[var(--background-from-primary-color)] min-h-screen min-w-screen
