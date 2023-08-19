@@ -1,4 +1,4 @@
-import personalImage from '../../public/self-image.png';
+import personalImage from '../assets/self-image.png';
 
 const Home = () => {
     return (
