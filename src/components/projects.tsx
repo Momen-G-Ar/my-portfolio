@@ -1,7 +1,7 @@
 
 const Projects = () => {
     return (
-        <section id='projects' className='snap-start'>
+        <section id='projects' className='sm:snap-start'>
             <div
                 className={`
                     bg-[var(--background-from-primary-color)] min-h-screen min-w-screen

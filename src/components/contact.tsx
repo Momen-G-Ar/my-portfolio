@@ -1,25 +1,76 @@
-
+import { EmailForm } from ".";
+import { AiFillGithub } from 'react-icons/ai'
+import { HiOutlineMail } from 'react-icons/hi'
+import { BsWhatsapp } from 'react-icons/bs'
+import { SlLocationPin } from 'react-icons/sl'
 const Contact = () => {
     return (
-        <section id='contact' className='sm:snap-start'>
+        <section id='contact' className='sm:snap-start flex justify-center'>
             <div
                 className={`
-                    grid grid-cols-1 grid-rows-3 h-screen w-screen
-                    sm:grid-cols-[1fr_0.8fr] sm:grid-rows-3 font-sans 
+                    h-screen w-screen font-sans grid 
+                    grid-cols-1 grid-rows-[0.6fr_1fr_0.1fr] 
+                    lg:grid-cols-[1fr_1fr] lg:grid-rows-[1fr_0.08fr]
                 `}
             >
-                <h1 className='min-w-full flex justify-start items-start font-sans text-sm sm:text-2xl text-[var(--primary-color)] mb-2'>
-                    Contact me
-                </h1>
-                <div id='up-left' className='min-w-full flex flex-col justify-center items-center px-10'>
-                    <div id='up-right' className=' flex justify-center items-center'>
-                        contact me on my email
+                <div
+                    className={`
+                        min-w-full flex flex-col 
+                        lg:justify-start lg:items-center lg:pt-52 lg:pl-20
+                        justify-center items-center
+                        `}
+                >
+                    <h1 className={`
+                        flex pl-6 mt-6 sm:mt-16 lg:mt-0
+                        lg:justify-start lg:text-2xl 
+                        text-[var(--primary-color)] font-semibold mb-[15px] min-w-full text-base 
+                    `}
+                    >
+                        Contact me
+                    </h1>
+                    <p className={`min-w-full flex justify-start items-center pl-6`}>
+                        Need to get touch with me? Either fill out the form with your inquiry or use my accounts to contact me, Feel free to contact my on any time.
+                    </p>
+                    <div className={`
+                        min-w-full flex flex-col justify-center items-center lg:items-start lg:justify-start mt-8 pl-6
+                    `}>
+                        {/* links will be here for social media and git and email and phone */}
+                        <ul className="flex flex-col gap-2 font-normal text-[var(--primary-color)]">
+                            <li>
+                                <a href="https://github.com/Momen-G-Ar" className="flex justify-start items-center">
+                                    <AiFillGithub size={'32px'} /> &nbsp; Momen-G-Ar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:cp.momen@gmail.com" className="flex justify-start items-center">
+                                    <HiOutlineMail size={'32px'} /> &nbsp;cp.momen@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/+972597456589" className="flex justify-start items-center">
+                                    <BsWhatsapp size={'32px'} /> &nbsp; +972-597456589
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://maps.apple.com/place?auid=16574875474150632388&lsp=7618" className="flex justify-start items-center">
+                                    <SlLocationPin size={'32px'} /> &nbsp; Hebron, Palestine
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div id='up-right' className=' flex justify-center items-center'>
-                    contact me on my accounts
+                <div
+                    className={`
+                        flex lg:justify-start lg:items-start lg:pt-52 lg:pl-24
+                        justify-center items-center w-full
+                    `}
+                >
+                    <EmailForm />
                 </div>
-                <div id='down' className='justify-center items-center'>
+
+                <div
+                    className='flex justify-center items-center lg:col-span-2 bg-[var(--background-from-primary-color)]'
+                >
                     Social media
                 </div>
             </div>
