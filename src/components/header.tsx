@@ -46,7 +46,7 @@ const Header = () => {
                     </>
                 }
             </span>
-            <ul className='flex-row gap-[1px]  items-center justify-end hidden sm:flex text-base'>
+            <ul className='flex-row gap-[1px] items-center justify-end hidden sm:flex text-base'>
                 {
                     links.map((link, index) => {
                         return (

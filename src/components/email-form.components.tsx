@@ -25,7 +25,7 @@ const EmailForm = () => {
             className={`
                 grid sm:grid-cols-2 sm:grid-rows-[0.2fr_1fr_0.2fr] 
                 grid-cols-1 grid-rows-[0.7fr_0.7fr_1fr_0.7fr] w-[70%] gap-[0.2rem] sm:gap-4 
-                border-solid border-2 shadow-2xl h-96 rounded-lg p-6 font-sans font-medium text-[var(--primary-color)]
+                border-solid border-2 shadow-2xl h-80 lg:h-[80%] rounded-lg p-6 font-sans font-medium text-[var(--primary-color)]
             `}
         >
             <div
