@@ -35,13 +35,13 @@ const Contact = () => {
                         min-w-full flex flex-col justify-center items-center lg:items-start lg:justify-start mt-8 pl-6
                     `}>
                         {/* links will be here for social media and git and email and phone */}
-                        <ul className="flex flex-col gap-2 font-normal text-[var(--primary-color)]">
+                        <ul className="flex flex-col gap-2 font-normal text-[var(--primary-color)] text-xl">
                             <li>
                                 <a
                                     href="https://github.com/Momen-G-Ar"
                                     className="flex justify-start items-center hover:[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]"
                                 >
-                                    <AiFillGithub size={'32px'} /> &nbsp;Momen-G-Ar
+                                    <AiFillGithub size={'42px'} /> &nbsp;Momen-G-Ar
                                 </a>
                             </li>
                             <li>
@@ -49,7 +49,7 @@ const Contact = () => {
                                     href="mailto:cp.momen@gmail.com"
                                     className="flex justify-start items-center hover:[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]"
                                 >
-                                    <HiOutlineMail size={'32px'} /> &nbsp;cp.momen@gmail.com
+                                    <HiOutlineMail size={'42px'} /> &nbsp;cp.momen@gmail.com
                                 </a>
                             </li>
                             <li>
@@ -57,7 +57,7 @@ const Contact = () => {
                                     href="https://wa.me/+972597456589"
                                     className="flex justify-start items-center hover:[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]"
                                 >
-                                    <BsWhatsapp size={'32px'} /> &nbsp; +972-597456589
+                                    <BsWhatsapp size={'42px'} /> &nbsp; +972-597456589
                                 </a>
                             </li>
                             <li>
@@ -65,7 +65,7 @@ const Contact = () => {
                                     href="https://maps.apple.com/place?auid=16574875474150632388&lsp=7618"
                                     className="flex justify-start items-center hover:[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]"
                                 >
-                                    <SlLocationPin size={'32px'} /> &nbsp; Hebron, Palestine
+                                    <SlLocationPin size={'42px'} /> &nbsp; Hebron, Palestine
                                 </a>
                             </li>
                         </ul>
