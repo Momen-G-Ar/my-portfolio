@@ -65,6 +65,7 @@ const EmailForm = () => {
                 <span className='block'>Message *</span>
                 <textarea
                     name="Message"
+                    placeholder='Message'
                     required
                     className={`
                         bg-gray-100 border-solid border-[1px] rounded-[3px] resize-none flex-grow font-normal

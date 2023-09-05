@@ -1,7 +1,7 @@
 import { EmailForm } from ".";
 import { AiFillGithub } from 'react-icons/ai'
 import { HiOutlineMail } from 'react-icons/hi'
-import { BsWhatsapp } from 'react-icons/bs'
+import { BsWhatsapp, BsFacebook, BsInstagram, BsLinkedin, BsTelegram } from 'react-icons/bs'
 import { SlLocationPin } from 'react-icons/sl'
 const Contact = () => {
     return (
@@ -9,7 +9,7 @@ const Contact = () => {
             <div
                 className={`
                     h-screen w-screen font-sans grid 
-                    grid-cols-1 grid-rows-[0.6fr_1fr_0.1fr] 
+                    grid-cols-1 grid-rows-[0.6fr_1fr_0.2fr] 
                     lg:grid-cols-[1fr_1fr] lg:grid-rows-[1fr_0.08fr]
                 `}
             >
@@ -37,22 +37,34 @@ const Contact = () => {
                         {/* links will be here for social media and git and email and phone */}
                         <ul className="flex flex-col gap-2 font-normal text-[var(--primary-color)]">
                             <li>
-                                <a href="https://github.com/Momen-G-Ar" className="flex justify-start items-center">
-                                    <AiFillGithub size={'32px'} /> &nbsp; Momen-G-Ar
+                                <a
+                                    href="https://github.com/Momen-G-Ar"
+                                    className="flex justify-start items-center hover:[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]"
+                                >
+                                    <AiFillGithub size={'32px'} /> &nbsp;Momen-G-Ar
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:cp.momen@gmail.com" className="flex justify-start items-center">
+                                <a
+                                    href="mailto:cp.momen@gmail.com"
+                                    className="flex justify-start items-center hover:[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]"
+                                >
                                     <HiOutlineMail size={'32px'} /> &nbsp;cp.momen@gmail.com
                                 </a>
                             </li>
                             <li>
-                                <a href="https://wa.me/+972597456589" className="flex justify-start items-center">
+                                <a
+                                    href="https://wa.me/+972597456589"
+                                    className="flex justify-start items-center hover:[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]"
+                                >
                                     <BsWhatsapp size={'32px'} /> &nbsp; +972-597456589
                                 </a>
                             </li>
                             <li>
-                                <a href="https://maps.apple.com/place?auid=16574875474150632388&lsp=7618" className="flex justify-start items-center">
+                                <a
+                                    href="https://maps.apple.com/place?auid=16574875474150632388&lsp=7618"
+                                    className="flex justify-start items-center hover:[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]"
+                                >
                                     <SlLocationPin size={'32px'} /> &nbsp; Hebron, Palestine
                                 </a>
                             </li>
@@ -69,9 +81,51 @@ const Contact = () => {
                 </div>
 
                 <div
-                    className='flex justify-center items-center lg:col-span-2 bg-[var(--background-from-primary-color)]'
+                    className='flex justify-center items-center row-span-1 min-h-[50px] lg:col-span-2 bg-[var(--background-from-primary-color)]'
                 >
-                    Social media
+                    <ul className="flex flex-row gap-4 font-normal text-[var(--primary-color)]">
+                        <li title="FaceBook">
+                            <a
+                                href="https://www.facebook.com/momenarafeh22"
+                            >
+                                <BsFacebook
+                                    size={'32px'}
+                                    className="transition transform duration-300 hover:scale-125"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/momenarafeh"
+                                className=""
+                            >
+                                <BsInstagram
+                                    size={'32px'}
+                                    className="transition transform duration-300 hover:scale-125"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/momin-arafa/"
+                            >
+                                <BsLinkedin
+                                    size={'32px'}
+                                    className="transition transform duration-300 hover:scale-125"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://t.me/MominArafa"
+
+                            >
+                                <BsTelegram 
+                                size={'32px'} 
+                                className="transition transform duration-300 hover:scale-125" />
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
