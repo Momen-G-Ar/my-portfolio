@@ -13,9 +13,9 @@ const Header = () => {
                 bg-[rgb(27 32 44 / 70%)] backdrop-blur-2xl shadow-md`
             }
         >
-            <span className='flex items-center justify-start'>
+            <a href='#home' className='flex items-center justify-start' onClick={() => setActiveLink(() => 'home')}>
                 Momin Arafa
-            </span>
+            </a>
             <span className='sm:hidden flex items-center justify-center text-base' >
                 <TfiMenu className="relative" onClick={() => toggleOpenMenu()} />
                 {

@@ -1,7 +1,7 @@
 
 const About = () => {
     return (
-        <section id='about' className='snap-start'>
+        <section id='about' className='sm:snap-start'>
             <div
                 className={`
                     transition-all duration-1000 ease-in min-h-screen min-w-screen
