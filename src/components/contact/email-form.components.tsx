@@ -16,12 +16,12 @@ const EmailForm = () => {
         e.currentTarget.Name.value = '';
         e.currentTarget.Message.value = '';
         e.currentTarget.Email.value = '';
-    }
+    };
 
     return (
         <form
             ref={form as any}
-            onSubmit={(e) => { handleSendMessage(e) }}
+            onSubmit={(e) => { handleSendMessage(e); }}
             className={`
                 grid sm:grid-cols-2 sm:grid-rows-[0.2fr_1fr_0.2fr] 
                 grid-cols-1 grid-rows-[0.7fr_0.7fr_1fr_0.7fr] w-[70%] gap-[0.2rem] sm:gap-4 
@@ -82,7 +82,7 @@ const EmailForm = () => {
                 </button>
             </div>
         </form>
-    )
-}
+    );
+};
 
 export default EmailForm;

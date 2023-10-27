@@ -1,8 +1,6 @@
-import { EmailForm } from ".";
-import { AiFillGithub } from 'react-icons/ai'
-import { HiOutlineMail } from 'react-icons/hi'
-import { BsWhatsapp, BsFacebook, BsInstagram, BsLinkedin, BsTelegram } from 'react-icons/bs'
-import { SlLocationPin } from 'react-icons/sl'
+import { EmailForm } from "..";
+import Icons from '../../icons';
+
 const Contact = () => {
     return (
         <section id='contact' className=' flex justify-center'>
@@ -25,7 +23,7 @@ const Contact = () => {
                         lg:justify-start lg:text-2xl 
                         text-[var(--primary-color)] font-semibold mb-[15px] min-w-full text-base 
                     `}
-                        
+
                     >
                         Contact me
                     </h1>
@@ -42,7 +40,7 @@ const Contact = () => {
                                     href="https://github.com/Momen-G-Ar"
                                     className="flex justify-start items-center hover:[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]"
                                 >
-                                    <AiFillGithub size={'42px'} /> &nbsp;Momen-G-Ar
+                                    <Icons.AiFillGithub size={'42px'} /> &nbsp;Momen-G-Ar
                                 </a>
                             </li>
                             <li>
@@ -50,7 +48,7 @@ const Contact = () => {
                                     href="mailto:cp.momen@gmail.com"
                                     className="flex justify-start items-center hover:[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]"
                                 >
-                                    <HiOutlineMail size={'42px'} /> &nbsp;cp.momen@gmail.com
+                                    <Icons.HiOutlineMail size={'42px'} /> &nbsp;cp.momen@gmail.com
                                 </a>
                             </li>
                             <li>
@@ -58,7 +56,7 @@ const Contact = () => {
                                     href="https://wa.me/+972597456589"
                                     className="flex justify-start items-center hover:[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]"
                                 >
-                                    <BsWhatsapp size={'42px'} /> &nbsp; +972-597456589
+                                    <Icons.BsWhatsapp size={'42px'} /> &nbsp; +972-597456589
                                 </a>
                             </li>
                             <li>
@@ -66,7 +64,7 @@ const Contact = () => {
                                     href="https://maps.apple.com/place?auid=16574875474150632388&lsp=7618"
                                     className="flex justify-start items-center hover:[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]"
                                 >
-                                    <SlLocationPin size={'42px'} /> &nbsp; Hebron, Palestine
+                                    <Icons.SlLocationPin size={'42px'} /> &nbsp; Hebron, Palestine
                                 </a>
                             </li>
                         </ul>
@@ -89,7 +87,7 @@ const Contact = () => {
                             <a
                                 href="https://www.facebook.com/momenarafeh22"
                             >
-                                <BsFacebook
+                                <Icons.BsFacebook
                                     size={'32px'}
                                     className="transition transform duration-300 hover:scale-125"
                                 />
@@ -100,7 +98,7 @@ const Contact = () => {
                                 href="https://www.instagram.com/momenarafeh"
                                 className=""
                             >
-                                <BsInstagram
+                                <Icons.BsInstagram
                                     size={'32px'}
                                     className="transition transform duration-300 hover:scale-125"
                                 />
@@ -110,7 +108,7 @@ const Contact = () => {
                             <a
                                 href="https://www.linkedin.com/in/momin-arafa/"
                             >
-                                <BsLinkedin
+                                <Icons.BsLinkedin
                                     size={'32px'}
                                     className="transition transform duration-300 hover:scale-125"
                                 />
@@ -121,7 +119,7 @@ const Contact = () => {
                                 href="https://t.me/MominArafa"
 
                             >
-                                <BsTelegram
+                                <Icons.BsTelegram
                                     size={'32px'}
                                     className="transition transform duration-300 hover:scale-125" />
                             </a>

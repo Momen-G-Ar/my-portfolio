@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
-import useHeader from '../hooks/header.hook';
-import { TfiMenu } from 'react-icons/tfi';
-import { RxCross2 } from 'react-icons/rx';
+import useHeader from '../../hooks/header.hook';
+import Icons from '../../icons';
 
 const Header = () => {
     const { scrollPosition, isOpen, toggleOpenMenu, links, activeLink, setActiveLink } = useHeader();
@@ -27,7 +26,7 @@ const Header = () => {
                         onClick={toggleOpenMenu}
                         className="cursor-pointer text-2xl flex md:hidden"
                     >
-                        <TfiMenu size={25} />
+                        <Icons.TfiMenu size={25} />
                     </button>
                     <div className={`
                         flex flex-col absolute m-auto top-0 w-[50%] h-screen bg-white 
@@ -38,7 +37,7 @@ const Header = () => {
                             onClick={toggleOpenMenu}
                             className={`text-3xl md:hidden flex relative w-full right-0 m-4 top-4 container`}
                         >
-                            <RxCross2 size={25} />
+                            <Icons.RxCross2 size={25} />
                         </button>
                         <ul
                             data-aos="fade-down"

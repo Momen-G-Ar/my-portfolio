@@ -1,5 +1,5 @@
 import './App.css';
-import { Header, Home, Contact } from './components';
+import { Header, Home, Contact, Skills } from './components';
 
 const App = () => {
     return (
@@ -8,8 +8,8 @@ const App = () => {
         >
             <Header />
             <Home />
-            {/* <About />
-            <Projects /> */}
+            <Skills />
+            {/* <About /> */}
             <Contact />
         </div>
     );
