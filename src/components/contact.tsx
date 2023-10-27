@@ -5,10 +5,10 @@ import { BsWhatsapp, BsFacebook, BsInstagram, BsLinkedin, BsTelegram } from 'rea
 import { SlLocationPin } from 'react-icons/sl'
 const Contact = () => {
     return (
-        <section id='contact' className='sm:snap-start flex justify-center'>
+        <section id='contact' className=' flex justify-center'>
             <div
                 className={`
-                    h-screen w-screen font-sans grid 
+                    w-screen font-sans grid 
                     grid-cols-1 grid-rows-[0.6fr_1fr_0.2fr] 
                     lg:grid-cols-[1fr_1fr] lg:grid-rows-[1fr_0.08fr]
                 `}
@@ -20,11 +20,12 @@ const Contact = () => {
                         justify-center items-center
                         `}
                 >
-                    <h1 className={`
+                    <h1 data-aos="fade-up" className={`
                         flex pl-6 mt-6 sm:mt-16 lg:mt-0
                         lg:justify-start lg:text-2xl 
                         text-[var(--primary-color)] font-semibold mb-[15px] min-w-full text-base 
                     `}
+                        
                     >
                         Contact me
                     </h1>
@@ -120,9 +121,9 @@ const Contact = () => {
                                 href="https://t.me/MominArafa"
 
                             >
-                                <BsTelegram 
-                                size={'32px'} 
-                                className="transition transform duration-300 hover:scale-125" />
+                                <BsTelegram
+                                    size={'32px'}
+                                    className="transition transform duration-300 hover:scale-125" />
                             </a>
                         </li>
                     </ul>
