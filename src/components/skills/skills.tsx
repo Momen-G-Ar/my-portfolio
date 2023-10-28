@@ -4,11 +4,11 @@ import Icons from '../../icons';
 
 const Skills = () => {
     return (
-        <section id='skills'>
+        <section id='skills' className='mt-5'>
             {/* Section Heading */}
             <div className={`
-                flex flex-col mx-auto justify-start items-start pt-20 w-full gap-5 md:mt-5
-                md:h-[500px] md:container md:pt-5 md:px-10`
+                flex flex-col mx-auto justify-start items-start pt-20 w-full gap-5
+                md:h-[540px] md:container md:pt-5 md:px-10`
             }>
                 <SectionHeading skillName='My Skills' color='text-[var(--primary-color)]' />
                 <div className={`

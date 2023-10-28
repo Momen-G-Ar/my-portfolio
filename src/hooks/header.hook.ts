@@ -1,6 +1,6 @@
 import React from 'react';
 
-const links: string[] = ['home', 'skills', 'work', 'contact']; // TODO: 'about', 'projects', 
+const links: string[] = ['home', 'skills', 'work', 'about', 'contact']; // TODO: , 'projects', 
 
 const useHeader = () => {
     const [activeLink, setActiveLink] = React.useState<string>('home');

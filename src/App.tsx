@@ -1,5 +1,5 @@
 import './App.css';
-import { Header, Home, Contact, Skills } from './components';
+import { Header, Home, Contact, Skills, About } from './components';
 
 const App = () => {
     return (
@@ -9,7 +9,7 @@ const App = () => {
             <Header />
             <Home />
             <Skills />
-            {/* <About /> */}
+            <About />
             <Contact />
         </div>
     );
