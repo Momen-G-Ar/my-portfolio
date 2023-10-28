@@ -36,15 +36,16 @@ const Skills = () => {
                         id='down-right-skills'
                         data-aos="fade-left"
                         className={`
-                            flex flex-col justify-center items-center
+                            flex flex-col justify-center items-center gap-2
                             sm:w-1/2 
-                            md:flex-row md:justify-center md:items-center md:w-8/12 gap-2
+                            md:flex-row md:items-center md:w-7/12  md:justify-end
+                            lg:w-6/12
                         `}>
                         <div className={`
                             flex flex-wrap gap-12 justify-center item-center
                             sm:w-full sm:h-full
-                            md:w-[70%] md:gap-12
-                            lg:gap-14
+                            md:w-[90%] md:gap-12 md:justify-end
+                            lg:gap-10
                         `}>
 
                             <SkillBox skillName='NodeJS' backgroundColor='black' logo={<Icons.IoLogoNodejs />} textColor='white' />
