@@ -44,7 +44,7 @@ const Skills = () => {
                             flex flex-wrap gap-12 justify-center item-center
                             sm:w-full sm:h-full
                             md:w-[70%] md:gap-12
-                            lg:gap-16
+                            lg:gap-14
                         `}>
 
                             <SkillBox skillName='NodeJS' backgroundColor='black' logo={<Icons.IoLogoNodejs />} textColor='white' />
