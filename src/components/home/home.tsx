@@ -13,7 +13,7 @@ const Home = () => {
                 `}>
                     {/* Left part */}
                     <div
-                        id='up-left'
+                        id='up-left-home'
                         className='flex flex-col justify-center md:w-1/2 md:flex-1 md:py-2'
                     >
                         <h1
@@ -99,7 +99,7 @@ const Home = () => {
                     </div>
                     {/* /Right part */}
                     <div
-                        id='down-right'
+                        id='down-right-home'
                         data-aos="fade-up"
                         className={`
                             flex md:justify-end md:items-center md:w-1/2 

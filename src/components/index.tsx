@@ -5,3 +5,5 @@ export { default as About } from './about';
 export { default as Contact } from './contact/contact';
 export { default as EmailForm } from './contact/email-form.components';
 export { default as SectionHeading } from './core/section-heading';
+export { default as ProgressBar } from './core/progress-bar';
+export { default as SkillBox } from './core/skill-box';
