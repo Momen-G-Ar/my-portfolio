@@ -71,36 +71,6 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-            {/* <span className='sm:hidden flex items-center justify-center text-base' data-aos="fade-down">
-                <TfiMenu className="relative" onClick={() => toggleOpenMenu()} />
-                {
-                    isOpen &&
-                    <>
-                        <ul tabIndex={0} className="flex flex-col gap-[4px] z-[3] p-2 shadow-md bg-gray-100 rounded-box w-28 mt-4 absolute top-[29px] right-1 rounded-md">
-                            {
-                                links.map((link, index) => {
-                                    return (
-                                        <a
-                                            key={link + index}
-                                            href={`#${link}`}
-                                            className={`
-                                                    font-normal w-full flex items-center justify-center
-                                                    transition-all duration-200 ease-in-out
-                                                    hover:decoration-[var(--primary-color)] hover:underline hover:underline-offset-2 hover:decoration-2 
-                                                    cursor-pointer capitalize
-                                                    ${activeLink === link ? 'font-semibold bg-[var(--secondary-color)] text-[var(--primary-color)] rounded-xl' : 'text-black'}
-                                                `}
-                                            onClick={() => setActiveLink(() => link)}
-                                        >
-                                            {link}
-                                        </a >
-                                    );
-                                })
-                            }
-                        </ul>
-                    </>
-                }
-            </span> */}
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import './App.css';
-import { Header, Home, Contact, Skills, About } from './components';
+import { Header, Home, Contact, Skills, About, Footer } from './components';
 
 const App = () => {
     return (
@@ -11,6 +11,7 @@ const App = () => {
             <Skills />
             <About />
             <Contact />
+            <Footer />
         </div>
     );
 };

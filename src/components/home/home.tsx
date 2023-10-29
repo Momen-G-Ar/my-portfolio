@@ -6,7 +6,7 @@ import resumePDF from './../../assets/Momin Arafa.pdf';
 const Home = () => {
     return (
         <section id='home' className=''>
-            <div className={`bg-gradient-to-r from-green-200 to-green-300`}>
+            <div className={`bg-gradient-to-r from-green-300 to-green-600`}>
                 <div className={`
                     flex flex-col mx-auto justify-center items-center pt-20 w-full gap-5
                     md:flex md:flex-row md:h-[700px] md:justify-between md:container md:pt-5 md:px-10
@@ -46,12 +46,14 @@ const Home = () => {
                             {/* Buttons */}
                             <div data-aos="fade-up" className="buttons flex gap-5 justify-center w-full sm:justify-start">
                                 <a
+                                    target="_blank"
                                     href="https://www.linkedin.com/in/momin-arafa/"
                                     className=" bg-black text-xs sm:text-[1rem] text-white px-5 py-2 sm:px-8 rounded-lg font-bold  hover:text-[var(--primary-color)]"
                                 >
                                     <span> Hire Me</span>
                                 </a>
                                 <a
+                                    target="_blank"
                                     href={resumePDF}
                                     className="flex items-center gap-2 text-xs sm:text-[1rem] bg-white border-black px-4 py-2 sm:px-6 rounded-lg font-bold  hover:text-[var(--primary-color)]"
                                     download
@@ -69,27 +71,27 @@ const Home = () => {
                                     className=" flex gap-5 flex-row justify-center w-full sm:justify-start"
                                 >
                                     <li>
-                                        <a href="https://github.com/Momen-G-Ar">
+                                        <a target="_blank" href="https://github.com/Momen-G-Ar">
                                             <Icons.AiFillGithub className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-150" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/in/momin-arafa/">
+                                        <a target="_blank" href="https://www.linkedin.com/in/momin-arafa/">
                                             <Icons.FaLinkedinIn className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-150 " />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/momenarafeh/">
+                                        <a target="_blank" href="https://www.instagram.com/momenarafeh/">
                                             <Icons.AiFillInstagram className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-150  " />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.facebook.com/momenarafeh22/">
+                                        <a target="_blank" href="https://www.facebook.com/momenarafeh22/">
                                             <Icons.FaFacebook className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-150  " />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://twitter.com/Momenarafeh11">
+                                        <a target="_blank" href="https://twitter.com/Momenarafeh11">
                                             <Icons.AiFillTwitterCircle className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-150  " />
                                         </a>
                                     </li>
