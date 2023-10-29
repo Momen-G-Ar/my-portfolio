@@ -10,7 +10,7 @@ const Skills = () => {
                 flex flex-col mx-auto justify-start items-start pt-20 w-full gap-5
                 md:h-[540px] md:container md:pt-5 md:px-10`
             }>
-                <SectionHeading skillName='My Skills' color='text-[var(--primary-color)]' />
+                <SectionHeading sectionName='My Skills' color='text-[var(--primary-color)]' />
                 <div className={`
                     flex flex-col mx-auto justify-center items-start w-full gap-20 
                     sm:gap-12

@@ -10,7 +10,7 @@ const About = () => {
                 md:h-[800px] md:container md:pt-5 md:px-10
                 lg:h-[520px] 
             `}>
-                <SectionHeading skillName='About Me' color='text-[var(--primary-color)]' />
+                <SectionHeading sectionName='About Me' color='text-[var(--primary-color)]' />
                 <div
                     className={`
                         flex flex-col w-full flex-wrap lg:flex-nowrap
