@@ -1,5 +1,5 @@
-import { SectionHeading } from '.';
-import Card from './core/card';
+import { SectionHeading } from '..';
+import Card from '../core/card';
 
 const About = () => {
     return (
