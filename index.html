@@ -1,18 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/my-portfolio/assets/momin arafa-9abcda9d.png" />
+    <link rel="icon" type="image/png" href="/my-portfolio/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Momin Arafa — C/C++ software engineer working on compilers and formal verification, competitive programmer and coach." />
+    <meta name="color-scheme" content="dark light" />
     <title>Momin Arafa</title>
-  <script type="module" crossorigin src="/my-portfolio/assets/index-f86239de.js"></script>
-  <link rel="stylesheet" href="/my-portfolio/assets/index-32b14117.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script>
+        // Apply the saved theme before first paint to avoid a flash.
+        try {
+            var t = localStorage.getItem('theme');
+            if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+            document.documentElement.dataset.theme = t;
+        } catch (e) { }
+    </script>
+  <script type="module" crossorigin src="/my-portfolio/assets/index-uH5l6fl1.js"></script>
+  <link rel="stylesheet" crossorigin href="/my-portfolio/assets/index-BFpj_fW5.css">
 </head>
 
 <body>
     <div id="root"></div>
-    
 </body>
 
 </html>
