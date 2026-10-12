@@ -1,62 +1,100 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    font-family: 'Josefin Sans', sans-serif;
-    transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
+:root {
+    --bg: #fafaf9;
+    --surface: #ffffff;
+    --surface-2: #f4f4f2;
+    --border: #e4e4e0;
+    --text: #18181b;
+    --muted: #5b5b66;
+    --accent: #0d8a6a;
+    --accent-soft: #0d8a6a1a;
 }
 
-body {
-    position: relative;
-    scroll-behavior: smooth;
-    --primary-color: #267e03dc;
-    --secondary-color: #267e034f;
-    --background-from-primary-color: #39c90033;
+:root[data-theme="dark"] {
+    --bg: #0b0d10;
+    --surface: #12151a;
+    --surface-2: #181c22;
+    --border: #252a32;
+    --text: #e7e9ee;
+    --muted: #9aa1ad;
+    --accent: #3ddc97;
+    --accent-soft: #3ddc971f;
 }
 
-
-
-input,
-textarea {
-    padding: 2px 5px;
-    font-weight: 500;
-}
-
-input:focus,
-input:active,
-input:focus-visible,
-textarea:focus,
-textarea:active,
-textarea:focus-visible {
-    border-color: var(--background-from-primary-color);
-    border: 1px solid var(--background-from-primary-color);
+@theme inline {
+    --color-bg: var(--bg);
+    --color-surface: var(--surface);
+    --color-surface-2: var(--surface-2);
+    --color-line: var(--border);
+    --color-fg: var(--text);
+    --color-muted: var(--muted);
+    --color-accent: var(--accent);
+    --color-accent-soft: var(--accent-soft);
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 html {
-    overflow-x: hidden !important;
     scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
-    width: 7px;
-    scrollbar-color: white;
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
 }
 
-::-webkit-scrollbar-thumb {
-    background: black;
-    border-radius: 10px;
+::selection {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+/* Scroll reveal (see use-reveal.ts) */
+.reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+.caret {
+    display: inline-block;
+    width: 0.55ch;
+    height: 1em;
+    margin-left: 2px;
+    vertical-align: -0.12em;
+    background: var(--accent);
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .caret {
+        animation: none;
+    }
 }
