@@ -11,15 +11,29 @@ export const results: ContestResult[] = [
 
 export const setting: Activity[] = [
     { title: 'Coordinator & problem setter, PPU CPC 2026', date: 'Sep 2026', detail: "14 problems; PPU's qualifier for PCPC." },
+    {
+        title: 'Coach, PPU teams at PCPC 2026',
+        date: '2026',
+        detail: 'Three teams: Absolute Cinema, N-DP Problem and Candidate Newbies (contest ongoing).',
+    },
+    { title: 'Problem setter, Hebron Code Jam qualifier (Code Academy)', date: '2025, 2026' },
+    { title: 'Coach, PPU teams at Hebron Code Jam', date: '2025, 2026' },
     { title: 'Problem setter, PPU PCPC 2025 qualifier', date: 'Aug 2025' },
     { title: 'Problem setter, PPU teams contest', date: 'Jul 2025' },
-    { title: 'Problem setter, Hebron Code Jam qualifiers (Code Academy)', date: '2025, 2026' },
-    { title: 'Problem setter, "Code it Palestinian" (برمجها فلسطيني)', date: 'Dec 2024', detail: '90+ participants from PPU, BZU and PTUK.' },
     {
-        title: 'Coach of PPU teams qualified for ACPC through PCPC',
-        date: '2024 – 2025',
-        detail: '2024: Game Over. 2025: Absolute Cinema and Math Math Easy Easy.',
+        title: 'Coach, PPU teams at ACPC 2025',
+        date: '2025',
+        detail: 'Two qualified teams: Absolute Cinema and Math Math Easy Easy.',
     },
-    { title: 'Coach of PPU teams, Hebron Code Jam', date: '2025, 2026' },
     { title: 'Proctor, IEEEXtreme 19.0', date: '2025' },
+    {
+        title: 'Problem setter, "Code it Palestinian" (برمجها فلسطيني)',
+        date: 'Dec 2024',
+        detail: '90+ participants from PPU, BZU and PTUK.',
+    },
+    {
+        title: 'Coach, PPU teams at PCPC 2024',
+        date: '2024',
+        detail: "Two teams: Tea Driven Development and Game Over. Game Over qualified for ACPC 2024 but couldn't travel to Egypt.",
+    },
 ];
